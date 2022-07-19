@@ -1,0 +1,715 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Libre+Baskerville:wght@700&family=Merriweather:wght@300&family=Noto+Sans+KR:wght@300&family=Roboto:wght@300&display=swap');
+
+@font-face{
+    font-family: 'NotoSerifKR-Bold';
+    src : url('../font/NotoSerifKR-Bold.otf') format('truetype');
+}
+
+
+/* 모바일 버전 */
+.wrapper{
+    margin: 0 auto;
+}
+
+
+
+/* 헤더 */
+#main_gnb{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 153px;
+    background-color: white;
+}
+.scroll_header{
+    position: fixed;
+    z-index: 19999;
+}
+#logo{
+    flex : 1;
+    margin: 10px;
+}
+#logo img{
+    width: 194px;
+    height: 68px;
+    margin-left: 5px;
+}
+#etc{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+#etc svg{
+    width: 33px;
+    height: 33px;
+    fill:#373737
+}
+#etc #login svg{
+    width: 50px;
+    height: 33px;
+    fill:#373737
+}
+
+
+
+
+
+
+/* 햄버거메뉴 */
+#main_lnb{
+    text-align: center;
+}
+#main_lnb ul{
+   display: none;
+}
+#main_lnb li:first-child{
+    border-bottom: 2px solid #F2F2F2;
+    margin-bottom: 50px 0;
+}
+#main_lnb li:nth-child(2){
+    border-bottom: 2px solid #F2F2F2;
+    margin-bottom: 50px 0;
+}
+#main_lnb li:nth-child(3){
+    border-bottom: 2px solid #F2F2F2;
+    margin-bottom: 50px 0;
+}
+#main_lnb a {
+    color : #373737;
+    line-height: 85px;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+/* 검색 */
+#search{
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#search #hashtags{
+    display: none;
+}
+#search #hashtags a{
+    font-weight: bold;
+}
+#search div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #search a {
+    color: #DFDFDF;
+    font-weight: bold;
+    font-size: x-large;
+    padding:  0 20px;
+} */
+#search input{
+    height: 50px;
+}
+.underline {
+    border: 0;
+    border-bottom: 2.5px solid #373737;
+    color: #DFDFDF;
+    font-weight: bold;
+    font-size: x-large;
+    padding:  0 10px;
+}
+#search img {
+    padding:  0 20px;
+}
+/* #search #surf img {
+    width: 33px;
+    height: 33px;
+} */
+
+
+/* 대구콘서트하우스 북마크 */
+#bookmark {
+    background-color: #F2F2F2;
+    height: 482px;
+}
+#bookmark .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 241px;
+}
+#bookmark .wrapper div{
+    width: 33%;
+    height: 241px;
+}
+#piano, #lyrics, #airline,
+#celebration, #pin{
+    text-align: center;
+    padding-top: 60px;
+}
+#piano img, #lyrics img, #airline img,
+#celebration img, #pin img{
+    width: 45px;
+    height: 45px;
+}
+#piano p, #lyrics p, #airline p,
+#celebration p, #pin p{
+    color :#6A6A6A;
+    padding-top: 25px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+  
+
+
+
+/* DCH ZONE 대구콘서트하우스 존*/
+#DCHZONE{
+    display: flex;
+}
+#DCHZONE .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+#DCHZONE .wrapper #DZONE{
+    font-size: 76px;
+    color: #A5A5A5;
+    margin-top: 50px;
+    position: absolute;  
+}
+#DCHZONE .wrapper #img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#DCHZONE .wrapper #img img:first-of-type{
+    margin-top: 124px;
+    z-index: 1;
+}
+#DCHZONE .wrapper #img img{
+    width: 80%;
+    margin-top: 26px;
+    z-index: 1;
+}
+#DCHZONE .wrapper #DZONE{
+    font-family: 'NotoSerifKR-Bold';
+    text-align: center;
+}
+#DCHZONE .wrapper button{
+    width: 148px;
+    height: 48px;
+    margin-top: 78px;
+    margin-bottom: 82px;
+    border: 1px solid #707070;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+
+
+
+
+/* DCH NEWS 대구콘서트하우스 뉴스*/
+#DCHNEWS{
+    display: flex;
+    background-color:#F2F2F2 ;
+    color: #373737;
+}
+#DCHNEWS .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+#DCHNEWS .wrapper #title{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid #6A6A6A;
+    margin-top: 80px;
+    margin-bottom: 18px;
+}
+#DCHNEWS .wrapper #title h1{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 22px;
+    font-size: 28px;
+}
+#DCHNEWS .wrapper #title button{
+    background-color: white;
+}
+#DCHNEWS .wrapper #title a{
+    color :#523685;
+}
+#DCHNEWS .wrapper #DCHNEWS_box{
+    width: 100%;
+    margin-top: 36px;
+}
+#DCHNEWS .wrapper #DCHNEWS_box .box{
+    display: flex;
+}
+#DCHNEWS .wrapper .box{
+    margin-bottom: 36px;
+}
+#DCHNEWS .wrapper .box:last-child{
+    margin-bottom: 84px;
+}
+#DCHNEWS .wrapper .box div{
+    border: 1px solid none;
+    background-color: #373737;
+    color: white;
+    padding:  16px 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+#DCHNEWS .wrapper .box .date{
+    margin-right: 20px;
+    height: 92px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+#DCHNEWS .wrapper .box div a{
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: small;
+}
+#DCHNEWS .wrapper .box .white_box{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 92px;
+}
+#DCHNEWS .wrapper .box .white_box p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#DCHNEWS .wrapper .box p{
+    border: 1px solid none;
+    color: #373737;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+}
+#DCHNEWS .wrapper button{
+    border: 1px solid #707070;
+    color: #707070;
+    height: 33px;
+    width: 33px;
+    font-size: 18px;
+}
+
+
+
+/* DCH YOUTUBE 대구콘서트하우스 유튜브*/
+#DCHYOUTUBE{
+    display: flex;
+    color: #373737;
+}
+#DCHYOUTUBE .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#DCHYOUTUBE .wrapper #you_box_1,
+#DCHYOUTUBE .wrapper #you_box_2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#DCHYOUTUBE .wrapper h1{
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #6A6A6A;
+    margin-top: 82px;
+    margin-bottom: 54px;
+    font-size: 28px;
+    height: 62px;
+}
+#DCHYOUTUBE .wrapper a{
+    display: flex;
+    justify-content: center;
+}
+#DCHYOUTUBE .wrapper a img{
+    width: 80%;
+}
+#DCHYOUTUBE .wrapper h2{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #6A6A6A;
+    display: flex;
+    justify-content:flex-start ;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 56px;
+}
+
+
+/* 푸터 */
+footer{
+    background-color: #000000;
+    color: #A5A5A5;
+}
+footer .wrapper{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+}
+footer .wrapper #sns{
+    width: 100%;
+    text-align: center;
+    margin-top: 94px;
+}
+#sns a{
+    margin-right: 40px;
+}
+#sns a:last-of-type{
+    margin-right: 0px;
+}
+footer .wrapper #list{
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+footer .wrapper #list ul li{
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-right: 16px;
+}
+footer #text{
+    width: 100%;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-top: 38px;
+    margin-bottom: 76px;
+}
+
+
+
+/* gototop */
+#goto-top {  
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999; 
+} 
+#goto-top img{
+    width: 46px;
+    height: 46px;
+}
+
+
+
+
+
+/* PC 모드 */
+@media screen and (min-width:764px){
+
+    .wrapper{
+        width: 100%;
+    }
+
+
+
+    #etc{
+        flex: 0.5;
+    }
+    #etc svg:hover{
+        fill:#523685;
+    }
+    #etc #login svg:hover{
+        fill:#523685;
+    }
+    #main_lnb ul{
+        display: block;
+        max-width: 1700px;
+        height: 88px;
+        margin: 0 auto;
+    }
+    #main_lnb ul li{
+        float: left;
+        width: 25%;
+    }
+    #main_lnb li:first-child{
+        border-bottom: none;
+        margin-bottom: 50px 0;
+    }
+    #main_lnb li:nth-child(2){
+        border-bottom: none;
+        margin-bottom: 50px 0;
+    }
+    #main_lnb li:nth-child(3){
+        border-bottom: none;
+        margin-bottom: 50px 0;
+    }
+    /*after 가상요소*/
+    #main_lnb a:after {
+    /*a요소를 블록 요소라고 선언*/
+    display:block;
+    /*카테고리 메뉴 밑줄의 크기를 동일하게 주기 위해 width 설정*/
+    /*혹시 a요소 크기만큼 생기길 바란다면 width 삭제*/
+    /* width:70px; */
+    /*comtent안은 밑줄 디자인을 위해 비워두세요.*/
+    content: '';
+    border-bottom: solid 2px #8f79b8;
+    /*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+    transform: scaleX(0);
+    /*변형 방식*/
+    transition: transform 250ms ease-in-out;
+    }
+    #main_lnb a:hover:after {
+        /*a 속성에 hover시 after를 기존 크기로 변경*/
+    transform: scaleX(1);
+    }
+    #main_lnb a:hover{
+    color : #523685;
+    /* font-size: larger; */
+    }   
+
+
+
+ 
+    #search {
+        display: flex;
+        margin: 0 auto;
+        width: 88%;
+    }
+    #search #hashtags{
+        display: flex;
+        flex: 50%;
+        justify-content: flex-start;
+        margin-left: 40px;
+    }
+    #search #hashtags h3{
+        color: #373737;
+    }
+    #search #hashtags a{
+        padding-left: 30px;
+        color: #373737;
+    }
+    #search #surf{
+        flex: 50%;
+        justify-content: flex-end;
+    }
+    #search #surf input{
+        width: 80%;
+    }
+
+
+
+    #bookmark {
+        height: 241px;
+        display: flex;
+        margin: 0 auto;
+    }
+    #bookmark .wrapper{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    #DCHNEWS .wrapper .box:last-child{
+        margin-bottom: 0px;
+    }
+    #piano img, #lyrics img, #airline img,
+    #celebration img, #pin img{
+        width: 60px;
+        height: 60px;
+    }
+   
+    #piano p:hover, #lyrics p:hover, #airline p:hover,
+    #celebration p:hover, #pin p:hover{
+        color : #523685;
+    }
+    .drop-in-underline {
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .drop-in-underline:before{
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0; right: 0;
+    height: 2px;
+    background-color:#523685;
+    }
+    .drop-in-underline:before{
+    opacity: 0;
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+    -webkit-transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+        transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .drop-in-underline:hover:before{
+    opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+
+
+
+    #DCHZONE .wrapper{
+        width: 90%;
+    }
+    #DCHZONE .wrapper #DZONE{
+        width: 100%;
+        text-align: start;
+        font-size: 100px;
+    }
+    #DCHZONE .wrapper #img{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-top: 28px;
+    }
+    #DCHZONE .wrapper #img img{
+        width: 24%;
+        margin-top: 124px;
+    }
+    #DCHZONE .wrapper button a{
+        color :#523685;
+    }
+    #DCHZONE .wrapper button a:hover{
+        font-size: larger;
+    }
+    /* #DCHZONE .wrapper #img img:first-of-type{
+        margin-right: 20px;
+    } */
+    #DCHZONE .wrapper #img img:hover { 
+        filter: brightness(50%); 
+    }
+    #DCHZONE .wrapper #img img{
+        margin-right: 20px;
+    }
+    #DCHZONE .wrapper #img img:last-of-type{
+        margin-right: 0px;
+        /* margin-top: 124px; */
+    }
+
+
+
+    #DCHNEWS .wrapper{
+        display: flex;
+        width: 88%;
+    }
+    #DCHNEWS .wrapper #DCHNEWS_box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 84px;
+    }
+    #DCHNEWS .wrapper #DCHNEWS_box .box{
+        width: 49%;
+    }
+    #DCHNEWS .wrapper #DCHNEWS_box .box:nth-of-type(odd){
+        margin-right: 10px;
+    }
+    #DCHNEWS .wrapper #DCHNEWS_box .box:nth-of-type(3){
+        margin-bottom: 0px;
+    }
+    #DCHNEWS .wrapper .box .white_box p:last-child{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #DCHNEWS .wrapper .box p:hover{
+        color:#523685;
+    }
+    /*after 가상요소*/
+    #DCHNEWS .wrapper .box p:after {
+        /*a요소를 블록 요소라고 선언*/
+        display:block;
+         /*카테고리 메뉴 밑줄의 크기를 동일하게 주기 위해 width 설정*/
+        /*혹시 a요소 크기만큼 생기길 바란다면 width 삭제*/
+        /* width:70px; */
+        /*comtent안은 밑줄 디자인을 위해 비워두세요.*/
+        content: '';
+        border-bottom: solid 2px #8f79b8;
+        /*크기를 0으로 줌으로써 평상시엔 밑줄 없음*/
+        transform: scaleX(0);
+        /*변형 방식*/
+        transition: transform 250ms ease-in-out;
+     }
+     #DCHNEWS .wrapper .box p:hover:after {
+         /*a 속성에 hover시 after를 기존 크기로 변경*/
+        transform: scaleX(1);
+     }
+     #DCHNEWS .wrapper #title a:hover{
+        font-size: xx-large;
+    }
+    
+
+
+  
+    
+
+  
+    #DCHYOUTUBE .wrapper{
+        width: 88%;
+    }
+    #DCHYOUTUBE .wrapper h1{
+        width: 100%;
+        text-align: start;
+    }
+    #DCHYOUTUBE .wrapper #DCHYOUTUBE_box{
+        width:100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    #DCHYOUTUBE .wrapper #you_box_1 ,
+    #DCHYOUTUBE .wrapper #you_box_2 {
+        width: 50%;
+    }
+    #DCHYOUTUBE .wrapper #you_box_1 img,
+    #DCHYOUTUBE .wrapper #you_box_2 img{
+        width: 100%;
+    }
+    #DCHYOUTUBE .wrapper #you_box_1 h2 ,
+    #DCHYOUTUBE .wrapper #you_box_2 h2 {
+        width: 100%;
+    }
+    #DCHYOUTUBE .wrapper #you_box_1 {
+        margin-right: 56px;
+    }
+    #DCHYOUTUBE .wrapper #DCHYOUTUBE_box  {
+        margin-bottom: 60px;
+    }
+    #DCHYOUTUBE .wrapper a img:hover { 
+        filter: brightness(50%); 
+    }
+
+
+
+
+
+
+
+    
+}
+
+
